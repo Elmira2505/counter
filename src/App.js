@@ -10,7 +10,8 @@ function App() {
 
   function minus(){
      setCounter(counter - 1)
-      reflect()
+      console.log('minus', counter)
+      reflect(counter)
 
   }
     function plus(){
@@ -21,7 +22,7 @@ function App() {
         setCounter(0)
         setIsReflect(false)
     }
-function reflect() {
+function reflect(counter) {
       console.log(counter)
     if (counter <= 0) {
         setIsReflect(false)
