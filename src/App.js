@@ -9,19 +9,21 @@ function App() {
   const [isReflect, setIsReflect] = useState(false)
 
   function minus(){
-     setCounter(counter - 1)
-      console.log('minus', counter)
-      reflect(counter)
+      setCounter(counter - 1)
+      reflect(counter-1)
 
   }
     function plus(){
         setCounter(counter + 1)
-       reflect(counter)
+        console.log(counter)
+       reflect(counter+1)
     }
     function reset(){
         setCounter(0)
         setIsReflect(false)
     }
+
+
 function reflect(counter) {
       console.log(counter)
     if (counter <= 0) {
